@@ -14,5 +14,7 @@ Since the Figma file did not include a mobile layout, I designed the mobile vers
 # Technologies Used:
 
 HTML5
+
 CSS3
+
 Bootstrap 5
