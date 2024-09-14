@@ -1,0 +1,143 @@
+body {
+    color: black;
+}
+.navbar{
+  position: absolute;
+  width: 1322px;
+  height: 91px;
+  left: calc(50% - 1322px/2);
+  top: 0px;
+}
+.navbar-text button {
+    margin-left: 10px;
+}
+h5{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+    color: #96BB7C;
+ 
+  }
+  h1{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 58px;
+    line-height: 80px;
+    color: #252B42;
+  }
+  h4{
+    height: 60px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 30px;
+    letter-spacing: 0.2px;
+    color: #737373;
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+  }
+  #join-us{
+   background-color: #6BA739; 
+   border: 1px solid #6BA739; 
+   color:white;
+  }
+  #learn-more-btn{
+  background-color: white; 
+  border: 1px solid #6BA739; 
+  color:#6BA739;
+  }
+  #log-in-btn{
+    background-color: trnsparent; 
+    color:#6BA739;
+  }
+header{
+  background-color: #FDF3F1;
+}
+.col-md-4 img {
+  height: 100%;
+  object-fit: cover;
+}
+
+col-md-6{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 30px;
+  width: 573px;
+  height: 386px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+.navbar-brand{
+    margin-right: 10%;
+}
+.navbar-nav{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 21px;
+  width: 275px;
+  height: 24px;
+  top: calc(50% - 24px/2);
+  align-items: center;
+  padding: 0px;
+  position: absolute;
+}
+.navbar-text{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 45px;
+  position: absolute;
+  width: 300px;
+  height: 52px;
+  right: 0px;
+  top: calc(50% - 52px/2);
+}
+.fa-facebook {
+  background: #6BA739;
+  color: white;
+}
+
+.fa {
+  padding: 5px;
+  font-size: 10px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  
+}
+
+.fa-twitter {
+  background: #6BA739;
+  color: white;
+}
+.fa-linkedin {
+  background: #6BA739;
+  color: white;
+}
+.learn-more {
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: 24px;
+}
+
+.learn-more .icon-container {
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.learn-more:hover .icon-container {
+  transform: translateX(5px);
+}
