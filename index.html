@@ -89,6 +89,7 @@
         <h4>Problems trying to resolve the conflict between the two major realms of Classical physics: Newtonian mechanics</h4>
     
         <br>
+        
         <div id="cardCarousel" class="carousel slide" data-bs-ride="carousel">
           <div class="carousel-inner">
             <div class="carousel-item active">
@@ -170,12 +171,14 @@
         <h4 class="text-center">Problems trying to resolve the conflict between the two major realms of Classical physics Newtonian mechanics</h4>
         <div class="row justify-content-center mt-4">
           <div class="col-md-10">
-              <input type="email" class="form-control" id="Email" placeholder="Your Email">
+              <input type="email" class="form-control" id="Email" placeholder="Your Email" required>
+              <div id="emailError" class="text-danger mt-2" style="display: none;">Please enter a valid email address.</div>
           </div>
           <div class="col-md-2">
-              <button type="submit" class="btn btn-subscribe">Subscribe</button>
+              <button type="submit" class="btn btn-subscribe" onclick="validateEmail(event)">Subscribe</button>
           </div>
       </div>
+      
     </div>
 </div>
     <footer>
@@ -231,5 +234,23 @@
             </div> 
         </div>  
     </footer>
+    <script>
+      function validateEmail() {
+        const emailInput = document.getElementById('Email');
+        const emailError = document.getElementById('emailError');
+        
+        const emailValue = emailInput.value;
+        const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+    
+        if (!emailPattern.test(emailValue)) {
+            emailError.style.display = 'block';
+            emailInput.classList.add('is-invalid');
+        } else {
+            emailError.style.display = 'none';
+            emailInput.classList.remove('is-invalid');
+            alert('Subscription successful!');
+        }
+    }
+    </script>
 </body>
 </html>
